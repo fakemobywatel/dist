@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RageDist - Pricing Plans</title>
+  <style>
+    /* Global Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Arial', sans-serif;
+    }
+
+    body {
+      background-color: #111;
+      color: #fff;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 10px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #222;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #ff4500;
+      border-radius: 5px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #e63d00;
+    }
+
+    header {
+      position: relative;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      overflow: hidden;
+    }
+
+    .navbar {
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .logo {
+      width: 120px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 1em;
+      transition: color 0.3s ease;
+      padding: 10px 15px;
+      border-radius: 5px;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff4500;
+      color: #fff;
+    }
+
+    .hero {
+      width: 100%;
+      height: 100%;
+      background: url('your-blurred-gif.gif') no-repeat center center/cover;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      color: #ff4500;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      animation: slideIn 1s ease forwards;
+      z-index: 1;
+    }
+
+    @keyframes slideIn {
+      from {
+        transform: translateY(-30px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    main {
+      padding: 60px 20px;
+    }
+
+    .pricing-section {
+      margin: 40px 0;
+      text-align: center;
+    }
+
+    .pricing-title {
+      font-size: 2.5em;
+      color: #ff4500;
+      margin-bottom: 20px;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+
+    @keyframes fadeInUp {
+      from {
+        transform: translateY(20px);
+        opacity: 0;
+      }
+      to {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    .plan {
+      background: rgba(255, 69, 0, 0.1);
+      border-radius: 10px;
+      padding: 20px;
+      margin: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+
+    .plan:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+    }
+
+    .plan h3 {
+      font-size: 1.8em;
+      color: #ff4500;
+      margin: 10px 0;
+    }
+
+    .plan p {
+      font-size: 1.2em;
+      line-height: 1.5;
+    }
+
+    .plan .price {
+      font-size: 2em;
+      color: #ff4500;
+      margin: 10px 0;
+    }
+
+    .button {
+      padding: 10px 20px;
+      background-color: #ff4500;
+      color: #fff;
+      text-decoration: none;
+      font-size: 1em;
+      border-radius: 5px;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+      display: inline-block;
+      margin-top: 20px;
+    }
+
+    .button:hover {
+      background-color: #e63d00;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background-color: #222;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="navbar">
+      <img src="https://i.ibb.co/V2kdt0M/rg.png" alt="RageDist Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="https://ragedist.com/">Back</a>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <div class="hero-overlay"></div>
+      <h1>RageDist - Pricing Plans</h1>
+    </div>
+  </header>
+
+  <main>
+    <section class="pricing-section">
+      <h2 class="pricing-title">Choose Your Plan</h2>
+
+      <div class="plan">
+        <h3>Artist</h3>
+        <div class="price">$39.99 / one time</div>
+        <p>- Ability to publish unlimited music</p>
+        <p>- 24/7 support</p>
+        <p>- In stores in as little as 5 days after uploading</p>
+        <p>- Support with copyright</p>
+        <a href="https://ragedist.com/signup" class="button">Select Plan</a>
+      </div>
+
+      <div class="plan">
+        <h3>Mini Label</h3>
+        <div class="price">$69.99 / yr</div>
+        <p>- Ability to publish unlimited music</p>
+        <p>- 24/7 support</p>
+        <p>- In stores in as little as 3 days after uploading</p>
+        <p>- Support with copyright</p>
+        <p>- Custom ©️℗ Labels</p>
+        <p>- Ability to send copyright strike from our panel</p>
+        <p>- Ability to quickly acquire licenses using RageLic</p>
+        <a href="https://ragedist.com/signup" class="button">Select Plan</a>
+      </div>
+
+      <div class="plan">
+        <h3>RAGER</h3>
+        <div class="price">Starts at $99 / month or 15-45% commission</div>
+        <p>- Everything that's in the Mini Label plan</p>
+        <p>- Own distribution/label child panel</p>
+        <p>- API Support</p>
+        <a href="https://ragedist.com/signup" class="button">Select Plan</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 RageDist. All rights reserved.</p>
+  </footer>
+</body>
+</html>
